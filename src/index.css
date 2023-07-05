@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+:root {
+  --strong-cyan: hsl(172, 67%, 45%);
+  --very-dark-cyan: hsl(183, 100%, 15%);
+  /* --dark-grayish-cyan: hsl(186, 14%, 43%); */
+  --dark-grayish-cyan: hsl(184, 14%, 56%);
+  /* --light-grayish-cyan: hsl(185, 41%, 84%); */
+  --light-grayish-cyan: hsl(189, 41%, 97%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: "Space Mono", sans-serif;
+  color: hsl(184, 14%, 56%);
+  font-weight: bold;
+  user-select: none;
+}
+
+.container {
+  background-color: var(--white);
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 5px hsl(183, 100%, 15%, 0.1);
+}
+
+input:not([type="reset"]) {
+  text-align: right;
+  background-color: hsl(189, 41%, 97%);
+  border: 2px solid hsl(189, 41%, 97%);
+  border-radius: 5px;
+  width: 100%;
+}
+
+input,
+input::placeholder {
+  font-size: 24px;
+  font-family: "Space Mono", sans-serif;
+}
+
+input[type="reset"] {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+  width: 100%;
+  font-size: 18px;
+  font-weight: bold;
+  border: 2px solid hsl(172, 67%, 45%);
+  border-radius: 5px;
+  padding: 5px 0;
+  transition: all 0.2s ease-in-out;
+}
+
+input[type="reset"]:hover {
+  cursor: pointer;
+  background-color: transparent;
+  color: hsl(172, 67%, 45%);
+}
+
+main {
+  background-color: var(--light-grayish-cyan);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Tip */
+.tip {
+  margin: 20px 0;
+}
+
+.tip .buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.tip .buttons button {
+  background-color: hsl(183, 100%, 15%);
+  color: var(--white);
+  font-family: "Space Mono", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  border: 2px solid hsl(183, 100%, 15%);
+  padding: 10px 0;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+}
+
+.tip .buttons button:hover {
+  cursor: pointer;
+  background-color: hsl(172, 67%, 45%);
+  border-color: hsl(172, 67%, 45%);
+}
+
+/* Amount */
+.amount {
+  background-color: hsl(183, 100%, 15%);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.amount article {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.amount article h3 {
+  color: var(--white);
+  font-size: 18px;
+}
+
+.amount article h3 span {
+  display: block;
+  color: hsl(184, 14%, 56%);
+  font-size: 14px;
+}
+
+.amount article p {
+  color: hsl(172, 67%, 45%);
+  font-weight: bold;
+  font-size: 24px;
+}
